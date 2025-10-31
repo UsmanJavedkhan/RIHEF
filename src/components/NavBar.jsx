@@ -10,11 +10,11 @@ function NavBar() {
   return (
     <>
 
-      <div className="flex justify-between items-center px-6   py-5 bg-white shadow-sm">
+      <div className="flex justify-between items-center px-12   py-6 bg-white shadow-sm">
      
         <img src={Logo} alt="Logo" className="h-20 md:h-12 xl:h-20" />
 
-        <div className="hidden md:flex text-sm font-bold text-[rgba(86,64,150,1)] gap-3 lg:gap-10">
+        <div className="hidden lg:flex text-sm font-bold text-[rgba(86,64,150,1)] gap-3 lg:gap-10">
           <a href="#">About</a>
           <a href="#">Membership</a>
           <a href="#">Advocacy</a>
@@ -24,13 +24,13 @@ function NavBar() {
           <a href="#">Resources</a>
         </div>
 
-        <button className="hidden md:block rounded bg-[rgba(86,64,150,1)] text-white text-base min-w-[123px] h-[50px]">
+        <button className="hidden font-semibold lg:block rounded-lg bg-[rgba(86,64,150,1)] text-white text-base min-w-[123px] h-[50px]">
           Log in
         </button>
 
         <button
           onClick={toggleDrawer}
-          className="md:hidden text-[rgba(86,64,150,1)]"
+          className="lg:hidden text-[rgba(86,64,150,1)]"
         >
           <Menu size={30} />
         </button>
@@ -48,7 +48,7 @@ function NavBar() {
           </button>
         </div>
 
-        <div className="flex flex-col text-[rgba(86,64,150,1)] font-bold text-base px-5 mt-5 space-y-4">
+        <div className="flex flex-col text-[rgba(86,64,150,1)] font-bold text-base px-5  mt-5 space-y-4">
           <a href="#" className="border-b pb-2">
             About
           </a>

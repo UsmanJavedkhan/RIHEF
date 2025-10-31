@@ -1,0 +1,60 @@
+// src/data/courseTabs.js
+const courseTabs = [
+  {
+    key: "back-of-house",
+    label: "Intro to Back of House",
+    items: [
+      "Intro - Front of House 101",
+      "Intro FOH - Barback",
+      "Intro FOH - Bartending 101",
+      "Intro FOH - Busser",
+      "Intro FOH - Food Runner",
+      "Intro FOH - Full Hands In/Out",
+      "Intro FOH - Greeting Guests",
+      "Intro FOH - Host",
+      "Intro FOH - How to Ask Open-Ended Questions",
+      "Intro - Front of House 101",
+      "Intro FOH - Barback",
+      "Intro - Front of House 101",
+      "Intro FOH - Barback",
+      "Intro FOH - Bartending 101",
+      "Intro FOH - Busser",
+      "Intro FOH - Food Runner",
+      "Intro FOH - Full Hands In/Out",
+      "Intro FOH - Greeting Guests",
+      "Intro FOH - Host",
+      "Intro FOH - How to Ask Open-Ended Questions",
+    ],
+  },
+  {
+    key: "front-of-house",
+    label: "Intro to Front of House",
+    items: [
+      "Intro FOH - How to Deal with a Difficult Customer",
+      "Intro FOH - Restaurant Cashier",
+      "Intro FOH - Server",
+      "Intro FOH - Soda Machine",
+      "Intro FOH - Upselling",
+      "Intro FOH - Variations of Beer",
+      "Intro FOH - Variations of Liquor",
+      "Intro FOH - Variations of Wine",
+    ],
+  },
+  {
+    key: "restaurant-basics",
+    label: "Intro to Restaurant Basics",
+    items: [
+      "Intro FOH - Telephone Etiquette",
+      "Intro FOH - Server Assistant",
+      "Intro FOH - Sidework Essentials",
+      "Intro FOH - Health and Safety Basics",
+      "Intro FOH - Hygiene and Grooming",
+      "Intro FOH - Team Communication",
+      "Intro FOH - Shift Readiness",
+      "Intro FOH - Dining Room Flow",
+      "Intro FOH - Closing Duties",
+    ],
+  },
+];
+
+export default courseTabs;

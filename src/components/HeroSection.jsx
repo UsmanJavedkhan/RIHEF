@@ -3,17 +3,17 @@ import BgImage from "../assets/images/BackgroundImg.png";
 function HeroSection() {
   return (
   <div
-  className="relative min-h-[350px] flex items-center justify-center bg-cover bg-[center_top_45%]"
+  className="relative min-h-[350px] flex items-center justify-center bg-cover bg-[center_top_40%]"
   style={{ backgroundImage: `url(${BgImage})` }}
 >
 
   <div className="absolute inset-0 bg-black/50"></div>
 
-  <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-[800px]">
+  <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-[850px]">
     <h1 className="text-white lg:text-[40px] text-[30px] font-bold mb-4">
       RIHEF LEARNING MANAGEMENT SYSTEM
     </h1>
-    <p className="text-[rgba(255,255,255,0.9)] text-xs md:text-sm px-6">
+    <p className="text-[rgba(255,255,255,0.9)] text-xs md:text-[16px] px-6">
       <span className="font-bold">
         Employees rise to the level of their training, not to the level of your expectations.
       </span>
