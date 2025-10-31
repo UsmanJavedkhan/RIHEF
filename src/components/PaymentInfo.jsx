@@ -45,10 +45,10 @@ export default function PaymentInfo({ cartItems, total, onQuantityChange  }) {
           </div>
 
          <div>
-  <label className="block text-sm mb-2 font-semibold">Card</label>
+
 
  <div>
-  <label className="block text-sm mb-2 font-semibold">Card</label>
+  <label className="block text-sm mb-2 ">Card</label>
 
   <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:ring-1 focus-within:ring-[rgba(86,64,150,1)]">
     {/* Card Icon */}

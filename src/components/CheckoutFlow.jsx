@@ -43,8 +43,8 @@ export default function CheckoutFlow({
           <img src={backIcon} alt="" className="w-6" /> Back
         </button>
       </div>
-      <div className="w-[63%]  mb-8 hidden lg:block lg:px-10">
-        <div className="flex items-center gap-5 text-lg  text-[rgba(86,64,150,1)]">
+      <div className="max-w-[63%]  mb-8 hidden lg:block pl-5 xl:px-10">
+        <div className="flex items-center gap-2 xl:gap-5 text-sm xl:text-lg  text-[rgba(86,64,150,1)]">
           {/* Step 1 */}
           <div className="flex items-center space-x-4">
             <div className="w-6 h-6 flex  items-center justify-center">
@@ -92,10 +92,13 @@ export default function CheckoutFlow({
           {/* Left Form */}
           <div className="flex-1 lg:max-w-[63%]">
             {/* Toggle */}
-            <div className="flex justify-between mb-6">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+            <div className="  flex flex-col md:flex-row  justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
                 Your Details
               </h2>
+              </div>
+              
               <div>
                 <button
                   onClick={() => setIsCompany(true)}
@@ -291,7 +294,7 @@ export default function CheckoutFlow({
                   />
                 </div>
               </div>
-              <div className="w-1/2 pr-2">
+              <div className="w-full md:w-1/2  pr-2">
                 <label className="block text-sm mb-1">
                   Password <span className="text-red-500 text-lg">*</span>
                 </label>

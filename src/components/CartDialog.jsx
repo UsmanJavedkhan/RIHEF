@@ -12,7 +12,7 @@ export default function CartDialog({
   const [showDetails, setShowDetails] = useState(false);
 
   return (
-    <div className="absolute left-1/2 -translate-x-1/2 bottom-0 z-50 w-full max-w-[738px] mx-auto mt-6 border-2 border-[rgba(86,64,150,1)] shadow-md shadow-[rgba(86,64,150,1)] rounded-xl bg-white transition-all duration-300">
+    <div className="absolute left-1/2  -translate-x-1/2 bottom-0 z-50  w-[97%] max-w-[738px]  md:mx-auto mt-6 border-2 border-[rgba(86,64,150,1)] shadow-md shadow-[rgba(86,64,150,1)] rounded-xl bg-white transition-all duration-300">
       {showDetails && (
         <div className="relative p-4  border-t border-gray-200">
           <button
@@ -24,7 +24,7 @@ export default function CartDialog({
 
           <h2 className="text-center text-lg font-semibold py-5 mb-4">My Order</h2>
 
-          <div className="space-y-9 px-4 mt-2 mb-3">
+          <div className="space-y-9 md:px-4 mt-2 mb-3">
             {cartItems.map((item, index) => (
               <div
                 key={index}
@@ -36,7 +36,7 @@ export default function CartDialog({
                   <img
                     src={item.image}
                     alt={item.header}
-                    className="w-50  object-cover rounded-l-[5px]"
+                    className="w-20 md:w-50  object-cover rounded-l-[5px]"
                   />
                           <button
         onClick={() => onQuantityChange(item.header, -item.quantity)}
@@ -50,7 +50,7 @@ export default function CartDialog({
                     <p className="text-xs pt-3">{item.header}</p>
                    
 
-                    <div className="flex w-[70px] mt-7 items-center border border-gray-700 rounded-[5px]">
+                    <div className="flex w-[70px] my-2 md:mt-7 items-center border border-gray-700 rounded-[5px]">
                       <button
                         onClick={() => onQuantityChange(item.header, -1)}
                         className="px-2 py-1 text-sm font-bold text-[rgba(86,64,150,1)]"
@@ -82,7 +82,7 @@ export default function CartDialog({
         </div>
       )}
 
-      <div className="flex items-center justify-between p-7   ">
+      <div className="flex items-center justify-between p-4  md:p-7    ">
         <div className="flex items-center space-x-4">
           <div className="relative border-1 border-[rgba(86,64,150,1)] rounded-full p-3">
             <img src={shop} alt="" />
@@ -112,7 +112,7 @@ export default function CartDialog({
 
         <button
           onClick={onProceedToPayment}
-          className="bg-[rgba(86,64,150,1)] text-white px-10 py-3 rounded-md hover:bg-[rgba(80,64,150,1)] transition"
+          className="bg-[rgba(86,64,150,1)] text-white px-2 md:px-10 py-3 rounded-md hover:bg-[rgba(80,64,150,1)] transition"
         >
           Proceed to Payment
         </button>

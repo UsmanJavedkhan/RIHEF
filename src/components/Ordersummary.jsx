@@ -32,7 +32,7 @@ function Ordersummary({ cartItems, total, onQuantityChange }) {
                       {item.header}
                     </p>
 
-                    <div className="flex gap-2 items-center my-2 ">
+                    <div className="flex gap-2  items-center my-2 ">
                       <div className="flex w-[60px]   items-center border border-[rgba(0,0,0,0.3)] rounded-[3px]">
                         <button
                           onClick={() => onQuantityChange(item.header, -1)}
@@ -54,7 +54,7 @@ function Ordersummary({ cartItems, total, onQuantityChange }) {
                       {item.hasViewFolder && (
                         <button
                           type="button"
-                          className="  text-[rgba(86,64,150,1)]  border-b text-[10px]"
+                          className=" hidden md:block  text-[rgba(86,64,150,1)]  border-b text-[10px]"
                           onClick={item.onViewFolders}
                         >
                           View Courses Packages
